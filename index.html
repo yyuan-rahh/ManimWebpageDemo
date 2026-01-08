@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Manim Projects</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-layer">
+        <div class="math-formulas">
+            <span class="formula">∫<sub>-∞</sub><sup>∞</sup> e<sup>-(x-μ)²/(2σ²)</sup>/(σ√(2π)) dx = 1</span>
+            <span class="formula">∇ × (∇ × E) = -μ₀ε₀ ∂²E/∂t²</span>
+            <span class="formula">∂²u/∂t² = c²(∂²u/∂x² + ∂²u/∂y² + ∂²u/∂z²)</span>
+            <span class="formula">L[f(t)] = ∫<sub>0</sub><sup>∞</sup> e<sup>-st</sup>f(t) dt</span>
+            <span class="formula">det(A - λI) = 0 where A ∈ M<sub>n×n</sub>(ℝ)</span>
+            <span class="formula">F(x) = ∫<sub>a</sub><sup>x</sup> f(t) dt, then F'(x) = f(x)</span>
+            <span class="formula">∑<sub>n=0</sub><sup>∞</sup> a<sub>n</sub>(x-c)<sup>n</sup> = a₀ + a₁(x-c) + a₂(x-c)² + ...</span>
+            <span class="formula">∂L/∂q - d/dt(∂L/∂q̇) = 0</span>
+            <span class="formula">∇²ψ + (2m/ℏ²)(E - V)ψ = 0</span>
+            <span class="formula">∫<sub>γ</sub> f(z) dz = 2πi ∑ Res(f, z<sub>k</sub>)</span>
+            <span class="formula">P(X=k) = (n choose k) p<sup>k</sup>(1-p)<sup>n-k</sup></span>
+            <span class="formula">f(x) = ∑<sub>n=-∞</sub><sup>∞</sup> c<sub>n</sub>e<sup>inx</sup> where c<sub>n</sub> = (1/2π)∫<sub>-π</sub><sup>π</sup> f(x)e<sup>-inx</sup> dx</span>
+            <span class="formula">∂²u/∂x² + ∂²u/∂y² = 0, u(x,y) = X(x)Y(y)</span>
+            <span class="formula">∫<sub>Ω</sub> ∇·F dV = ∫<sub>∂Ω</sub> F·n dS</span>
+            <span class="formula">d²θ/dt² + (g/L)sin(θ) = 0</span>
+            <span class="formula">E[g(X)] = ∫<sub>-∞</sub><sup>∞</sup> g(x)f<sub>X</sub>(x) dx</span>
+            <span class="formula">lim<sub>n→∞</sub> (1 + 1/n)<sup>n</sup> = e</span>
+            <span class="formula">∇ × E = -∂B/∂t, ∇ × B = μ₀J + μ₀ε₀∂E/∂t</span>
+            <span class="formula">∫<sub>0</sub><sup>1</sup> x<sup>α-1</sup>(1-x)<sup>β-1</sup> dx = Γ(α)Γ(β)/Γ(α+β)</span>
+            <span class="formula">f(x) = (1/√(2πσ²))e<sup>-(x-μ)²/(2σ²)</sup></span>
+            <span class="formula">∂u/∂t = α(∂²u/∂x² + ∂²u/∂y²)</span>
+        </div>
+        <div class="tech-grid"></div>
+    </div>
+    <header>
+        <h1>My Manim Projects</h1>
+        <p class="subtitle">Mathematical animations and interactive visualizations</p>
+    </header>
+
+    <main>
+        <section id="manim-side-projects" class="section">
+            <h2>Manim Side Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video">
+                            <source src="videos/CreateCircle.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Create Circle</h3>
+                        <p>A demonstration of circle creation animation.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="screenshot-container">
+                        <img src="videos/RightAngleExample_ManimCE_v0.19.1.png" alt="Right Angle Example">
+                    </div>
+                    <div class="project-info">
+                        <h3>Right Angle Example</h3>
+                        <p>Working with right angle visualization and Manim coding language.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video">
+                            <source src="videos/SimpleDemo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Simple Demo</h3>
+                        <p>A simple demonstration animation.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video">
+                            <source src="videos/TwoTransforms.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Two Transforms</h3>
+                        <p>Demonstration of multiple transformations.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video">
+                            <source src="videos/SquareToCircle.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Square to Circle</h3>
+                        <p>Transformation animation from square to circle.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video">
+                            <source src="videos/StickPerson.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Stick Person</h3>
+                        <p>Animated stick figure demonstration.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video" id="randomwalk-video">
+                            <source src="videos/RandomWalk.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Random Walk</h3>
+                        <p>Visualization of a random walk process simulating Brownian motion. Used to model the randomness of the stock market.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video" id="righttriangle-video">
+                            <source src="videos/righttriangle.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pythagorean Theorem</h3>
+                        <p>Euclid's geometric proof of the Pythagorean theorem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="interactive-manim" class="section">
+            <h2>Interactive Manim - The BIG Work in Progress</h2>
+            <p>Building an interactive interface that uses Manim to help teachers and students visualize mathematical concepts.</p>
+            <div class="projects-grid">
+                <!-- Interactive projects will be added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with Manim</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set playback speed to 1.6x for the last two videos
+            const randomWalkVideo = document.getElementById('randomwalk-video');
+            const rightTriangleVideo = document.getElementById('righttriangle-video');
+            
+            if (randomWalkVideo) {
+                randomWalkVideo.playbackRate = 1.6;
+            }
+            if (rightTriangleVideo) {
+                rightTriangleVideo.playbackRate = 1.6;
+            }
+
+            // Intersection Observer to play videos when mostly in view
+            const videos = document.querySelectorAll('.lazy-video');
+            
+            const observerOptions = {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.6 // Play when 60% of video is visible
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    const video = entry.target;
+                    if (entry.isIntersecting) {
+                        // Video is mostly in view, play it
+                        video.play().catch(error => {
+                            // Handle autoplay restrictions
+                            console.log('Autoplay prevented:', error);
+                        });
+                    } else {
+                        // Video is out of view, pause it
+                        video.pause();
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all videos
+            videos.forEach(video => {
+                observer.observe(video);
+            });
+
+            // Initialize video scrubbers
+            videos.forEach(video => {
+                const container = video.closest('.video-container');
+                if (!container) return;
+                
+                const scrubber = container.querySelector('.video-scrubber');
+                const track = container.querySelector('.scrubber-track');
+                const progress = container.querySelector('.scrubber-progress');
+                const handle = container.querySelector('.scrubber-handle');
+                
+                if (!scrubber || !track || !progress || !handle) return;
+
+                let isDragging = false;
+
+                // Update progress bar as video plays
+                const updateProgress = () => {
+                    if (!isDragging && video.duration) {
+                        const percent = (video.currentTime / video.duration) * 100;
+                        progress.style.width = percent + '%';
+                        handle.style.left = percent + '%';
+                    }
+                };
+
+                video.addEventListener('timeupdate', updateProgress);
+                video.addEventListener('loadedmetadata', () => {
+                    updateProgress();
+                });
+
+                // Get position from mouse/touch event
+                const getPosition = (e) => {
+                    const rect = track.getBoundingClientRect();
+                    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+                    return Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+                };
+
+                // Seek video to position
+                const seekTo = (percent) => {
+                    if (video.duration) {
+                        video.currentTime = percent * video.duration;
+                        progress.style.width = percent * 100 + '%';
+                        handle.style.left = percent * 100 + '%';
+                    }
+                };
+
+                // Mouse/Touch event handlers
+                const startDrag = (e) => {
+                    isDragging = true;
+                    video.pause();
+                    const percent = getPosition(e);
+                    seekTo(percent);
+                    e.preventDefault();
+                };
+
+                const drag = (e) => {
+                    if (!isDragging) return;
+                    const percent = getPosition(e);
+                    seekTo(percent);
+                    e.preventDefault();
+                };
+
+                const endDrag = (e) => {
+                    if (!isDragging) return;
+                    isDragging = false;
+                    // Resume playing if video was in view
+                    if (video.getBoundingClientRect().top < window.innerHeight * 0.6) {
+                        video.play().catch(() => {});
+                    }
+                    e.preventDefault();
+                };
+
+                // Mouse events
+                track.addEventListener('mousedown', startDrag);
+                document.addEventListener('mousemove', drag);
+                document.addEventListener('mouseup', endDrag);
+
+                // Touch events
+                track.addEventListener('touchstart', startDrag);
+                document.addEventListener('touchmove', drag);
+                document.addEventListener('touchend', endDrag);
+
+                // Click to seek
+                track.addEventListener('click', (e) => {
+                    if (!isDragging) {
+                        const percent = getPosition(e);
+                        seekTo(percent);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
