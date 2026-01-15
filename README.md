@@ -54,3 +54,5 @@ A simple, clean webpage to showcase your Manim projects including videos and int
 
 Simply open `index.html` in your web browser to view your portfolio.
 
+
+

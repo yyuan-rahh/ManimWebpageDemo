@@ -168,8 +168,8 @@
 
                 <div class="project-card">
                     <div class="video-container">
-                        <video loop muted playsinline class="lazy-video" id="righttriangle-video">
-                            <source src="videos/righttriangle.mp4" type="video/mp4">
+                        <video loop muted playsinline class="lazy-video" id="pythagorean-video">
+                            <source src="videos/Pythagorean.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <div class="video-scrubber">
@@ -191,7 +191,81 @@
             <h2>Interactive Manim - The BIG Work in Progress</h2>
             <p>Building an interactive interface that uses Manim to help teachers and students visualize mathematical concepts.</p>
             <div class="projects-grid">
-                <!-- Interactive projects will be added here -->
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video">
+                            <source src="screenshots/Shape%20Creation.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Shape Creation</h3>
+                        <p>Interactive shape creation tool for mathematical visualization.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video">
+                            <source src="screenshots/Shape%20Transform.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Shape Transform</h3>
+                        <p>Interactive shape transformation visualization.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video">
+                            <source src="screenshots/Text%20%2B%20LaTeX%20Demo.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Text + LaTeX Demo</h3>
+                        <p>Demonstration of text rendering and LaTeX mathematical notation in Manim.</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="video-container">
+                        <video loop muted playsinline class="lazy-video" id="ambiguous-case-video">
+                            <source src="screenshots/Ambiguous%20Case%20Sine%20Law.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-scrubber">
+                            <div class="scrubber-track">
+                                <div class="scrubber-progress"></div>
+                                <div class="scrubber-handle"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Ambiguous Case Sine Law</h3>
+                        <p>Interactive visualization of the ambiguous case in the Law of Sines.</p>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -204,13 +278,17 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Set playback speed to 1.6x for the last two videos
             const randomWalkVideo = document.getElementById('randomwalk-video');
-            const rightTriangleVideo = document.getElementById('righttriangle-video');
+            const pythagoreanVideo = document.getElementById('pythagorean-video');
+            const ambiguousCaseVideo = document.getElementById('ambiguous-case-video');
             
             if (randomWalkVideo) {
                 randomWalkVideo.playbackRate = 1.6;
             }
-            if (rightTriangleVideo) {
-                rightTriangleVideo.playbackRate = 1.6;
+            if (pythagoreanVideo) {
+                pythagoreanVideo.playbackRate = 1.6;
+            }
+            if (ambiguousCaseVideo) {
+                ambiguousCaseVideo.playbackRate = 2.0;
             }
 
             // Intersection Observer to play videos when mostly in view
